@@ -63,7 +63,7 @@ func main() {
  }
 
  // List quotes for specific instrument and exchange
- q, err := c.GetInstrumentQuotesJSON(msci, nList[0].Id, "Y1", "2022-11-20")
+ q, err := c.GetInstrumentQuotesJSON(msci, nList[0].Id, gonvista.RangeOneYear, "2022-11-20")
  if err != nil {
   panic(err)
  }
